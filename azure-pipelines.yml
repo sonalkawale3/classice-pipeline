@@ -21,7 +21,7 @@ steps:
   inputs:
     provider: 'azurerm'
     command: 'init'
-    workingDirectory: '$(System.DefaultWorkingDirectory)\classice-pipeline'
+    workingDirectory: '$(System.DefaultWorkingDirectory)'
     backendServiceArm: 'asr'
     backendAzureRmStorageAccountName: 'sonalfortesting'
     backendAzureRmContainerName: 'backendtest'

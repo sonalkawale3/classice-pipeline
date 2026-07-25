@@ -6,7 +6,7 @@
 trigger:
 - main
 
-pool: windows-agent-sonal
+pool: 'windows-agent-sonal'
 
 steps:
 - script: echo Hello, world!

@@ -6,6 +6,12 @@ terraform   {
     }
     
 }
+backend "azurerm" {
+    storage_account_name = "sonalfortesting"
+    resource_group_name = "rg1"
+    container_name = "backendtest"
+    key = "rg.test"
+}
 }
 provider "azurerm" {
     features{}

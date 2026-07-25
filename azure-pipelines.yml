@@ -21,7 +21,7 @@ steps:
   inputs:
     provider: 'azurerm'
     command: 'init'
-    workingDirectory: 'C:\agents\vsts-agent-win-x64-5.276.0\_work\3\s'
+    workingDirectory: '$(System.DefaultWorkingDirectory)\classice-pipeline'
     backendServiceArm: 'asr'
     backendAzureRmStorageAccountName: 'sonalfortesting'
     backendAzureRmContainerName: 'backendtest'

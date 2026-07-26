@@ -44,3 +44,9 @@ steps:
     command: 'plan'
     environmentServiceNameAzureRM: 'asr'
 
+- task: TerraformTask@5
+  inputs:
+    provider: 'azurerm'
+    command: 'apply'
+    environmentServiceNameAzureRM: 'asr'
+

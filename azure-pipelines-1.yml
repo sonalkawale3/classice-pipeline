@@ -35,6 +35,15 @@ steps:
 - task: TerraformTask@5
   inputs:
     provider: 'azurerm'
+    command: 'terraform init -reconfigure'
+    backendServiceArm: 'asr'
+    backendAzureRmStorageAccountName: 'sonalfortesting'
+    backendAzureRmContainerName: 'backendtest'
+    backendAzureRmKey: 'rg.test'
+
+- task: TerraformTask@5
+  inputs:
+    provider: 'azurerm'
     command: 'init'
     backendServiceArm: 'asr'
     backendAzureRmStorageAccountName: 'sonalfortesting'

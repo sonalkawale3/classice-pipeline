@@ -31,3 +31,12 @@ steps:
   inputs:
     targetType: 'inline'
     script: 'terraform init'
+
+- task: TerraformTask@5
+  inputs:
+    provider: 'azurerm'
+    command: 'init'
+    backendServiceArm: 'asr'
+    backendAzureRmStorageAccountName: 'sonalfortesting'
+    backendAzureRmContainerName: 'backendtest'
+    backendAzureRmKey: 'rg.test'

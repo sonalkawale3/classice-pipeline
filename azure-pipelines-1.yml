@@ -38,3 +38,9 @@ steps:
     backendAzureRmContainerName: 'backendtest'
     backendAzureRmKey: 'rg.test'
 
+- task: TerraformTask@5
+  inputs:
+    provider: 'azurerm'
+    command: 'plan'
+    environmentServiceNameAzureRM: 'asr'
+
